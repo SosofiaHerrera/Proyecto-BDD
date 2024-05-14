@@ -1,24 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georama">
-    <title>Login Page</title>
-    <link rel="stylesheet" href="style.css">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Georama">
+  <title>Login | Hecoss</title>
+  <link href="bootstrap.min.css" rel = "stylesheet">
+  <link rel="stylesheet" href="./style2.css">
+</head>
 
-  </head>
-  <body>
-    <div class="bg"></div>
-    <form class="login" id="loginForm">
-      <h1><b>Login</b></h1>
-      <input type="text" placeholder="Usuario" id="user" />
-      <input type="password" placeholder="Contraseña" id="password"/>
-      <!-- Cambiado type="button" a type="submit" para que la acción de enviar el formulario se ejecute -->
-      <input type="submit" value="Login">
-    </form>
-    <!-- Enlazamos nuestro archivo JavaScript -->
-    <script src="script.js"></script>
-    
-  </body>
+<body>
+  <div class="container w-75 bg-primary mt-5 rounded-18 shadow">
+    <div class="row align-items-stretch">
+      <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded">
+
+      </div>
+      <div class="col bg-white p-5 rounded-end">
+        <div class="text-center">
+          <img src="img/0.png" width="200" alt="">
+        </div>
+        <h2 class="fw-bold text-center py-5">Bienvenido</h2>
+
+        <form action="#" id="loginForm">
+          <div class="mb-4">
+            <label for="text" class="form-label">Usuario</label>
+            <input type="text" class="form-control" name="usuario" id="user">
+          </div>
+          <div class="mb-4">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" name="contraseña" id="password">
+          </div>
+          <div class="mb-4">
+            <input type="checkbox" name="connected" class="form-check-input">
+            <label for="connected" class="form-check-label">Mantenerme conectado</label>
+          </div>
+
+          <div class="d-grid">
+            <button type="submit" class="btn btn-primary" value="Login">Iniciar sesión</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="script2.js"></script>
+</body>
 </html>
